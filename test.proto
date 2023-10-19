@@ -1,0 +1,16 @@
+enum FOO {
+  BAR = 1;
+}
+
+message Test {
+  required float num  = 1;
+  required string payload = 2;
+}
+message Person {
+  optional string name = 1;
+  optional int32 id = 2;
+  optional string email = 3;
+}
+message AnotherOne {
+  repeated FOO list = 1;
+}
